@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+   <script>
+    //----for Loop----
+    // for(let i=1; i<=10; i++) {
+    //     console.log("Apna college"); //5 execute
+    // }
+
+    // //Calculate sum of 1 to 5;
+    // let sum = 0;
+    // for (let i = 1; i<=5; i++) {
+    //     sum = sum + i;
+    // }
+    // console.log("sum= ",sum);
+    // console.log("loop has ended");
+
+    // for( let i=1; i<=5; i++) {
+    //     console.log("i= ", i);
+    // }
+    //console.log(i);(can't acess)
+    //In loops variables are only survive in block scope we can't access outside the block
+    
+    //----Infinite loops (never end)----
+    //warning:- don't run infinite loop in your computer
+
+    //-----while Loop-----
+    // let i = 1;
+    // while (i <= 5) {
+    //     console.log("Aditya Singh");
+    //     i++;
+    //  }
+
+     //-----do while Loop----
+    //  let i = 20;
+    //  do {
+    //     console.log("Apna College");
+    //  } while (i <= 10);
+     //atleast one time program is run while condition is not meet
+
+    //  let i = 1;
+    //  do {
+    //     console.log("i=",i);
+    //     i++;
+    //  } while (i <= 5);
+
+     //----for-of loop-----
+     let str = "JavaScript"
+     
+      for (let val of str) {
+        console.log("val=", val);
+     }
+
+
+   //----for-in Loop(Object)----
+   let student = {
+      name: "Aditya Singh",
+      age : 24,
+      cgpa: 8.6,
+      isPass: "true",
+      Dept: "BCA",
+   };
+
+   for(let key in student) {
+      console.log("key=", key, "value", student[key]);
+   }
+
+
+
+     
+   </script> 
+</body>
+</html>

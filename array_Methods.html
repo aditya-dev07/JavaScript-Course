@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+
+<body>
+    <script>
+        //...Push(): add to end...
+        let fruits = ["Apple", "Mango", "litchi", "Orange", "Bananas", "Grapes"];
+        fruits.push("pineapples", "Chicku");
+        console.log(`updated fruits items is ${fruits}`);
+
+        //...Pop(): delete from end & return...
+        let foodItems = ["potato", "apple", "Litchi", "tomato"];
+        console.log(foodItems);
+        foodItems.pop();
+        console.log(foodItems);
+
+        //...toString(): converts array to string...
+        let marks = [46, 97, 90, 80, 57, 89, 37,];
+        console.log(marks);
+        console.log(marks.toString());
+
+        //...Concat():joins multiple arrays & returns result...
+        let marvel_heros = ["ironman", "thor", "Spiderman", "antman", "Dr strange"];
+        let south_heros = ["Prabhas", "Mahesh babu", "Allu Arjun", "Ramcharan"]
+        let allCollection = marvel_heros.concat(south_heros);
+        console.log(allCollection);
+
+        //...unshift(): add to start...
+        let bollywood_heros = ["AmitabhBacchan", "Dhramendra", "SalmanKhan", "ShahrukhKhan"]
+        bollywood_heros.unshift("RajpalYadav");
+
+        //...shift():delete from start...
+        let name = ["Aditya", "Ajay", "Manish", "Satish"];
+        let val = name.shift();
+        console.log(val);
+
+        //...slice(): returns a piece of the array...
+        let num = [34, 67, 89, 67, 78, 67, 89, 34];
+        console.log(num.slice(1, 4));
+
+        //...splice(): change array (add, remove, replace)...
+        let superheros = ["thor", "Dr strange", "Ironman", "Spideman", "Antman", "Rocket", "Groot"];
+        superheros.splice(2, 3, "loky", "blackPanther", "Natasha");
+        console.log(superheros);
+
+    </script>
+</body>
+
+</html>

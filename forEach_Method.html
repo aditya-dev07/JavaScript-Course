@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach Loop in Arrays</title>
+</head>
+<body>
+    <script>
+        //arr.forEach(callBackFunction)
+        //callbackFunction: Here, it is a function to execute to each element in the array
+        //*A callBack function passed as an argument to another function*
+
+        let arr = [1, 2, 3, 4 ,5];
+        arr.forEach((val) => {
+            console.log(val);
+        })
+
+        let arr2 = ["Noida", "Delhi","Lucknow", "Gorakhpur"];
+        arr2.forEach((val, idx, arr) => {
+            console.log(val.toUpperCase(), idx, arr);
+        });
+
+        //---> forEach Loop is also call Higher Order function/Methods
+        //A function used another function as a parameter or return another function as their output.
+    </script>
+</body>
+</html>

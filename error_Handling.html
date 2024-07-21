@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling</title>
+</head>
+<body>
+    <script>
+        //----Error Handling-----
+        //Error handling used for keep the flow of  line of code execution
+
+        //try-catch
+        // try{
+        //     ...normal code
+        // } catch (err) { //err is error object
+             
+        // }
+        //The 'try' statement lets you test a block of code to check for errors
+        //The 'catch' statement lets you handle the error if any are present
+
+        let a = 5;
+        let b = 20;
+        console.log("a=",a);
+        console.log("b=",a);
+        console.log("a+b =",a+b);
+        try {
+            console.log("a+b=",a+c); //error
+        } catch(err) {
+            console.log(err);
+        }
+
+        console.log("a+b=",a+b);
+        console.log("a+b=",a+b);
+        console.log("a+b=",a+b);
+        console.log("a+b=",a+b);
+        console.log("a+b=",a+b);
+    </script>
+</body>
+</html>

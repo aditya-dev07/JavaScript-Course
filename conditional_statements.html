@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+<body>
+    <script>
+        //----if Statements----
+        // let age = 18;
+
+        // if(age >= 18) {
+        //     console.log(" You can vote");
+        // }
+
+        // if(age < 18) {
+        //     console.log("you cannot vote");
+        // }
+
+        let mode = "dark";
+        let color;
+
+        if(mode === "dark") {
+            color = "black";
+        }
+        if(mode === "light") {
+            color = "white";
+        }
+        console.log(color);
+
+        //----if-else Statement----
+        // let mode2 = "white";
+        // let color2;
+        // if(mode2 === "dark") {
+        //     color = "black";
+        // } else{
+        //     color = "white";
+        // }
+        // console.log(color);
+        
+        //age example 2
+        // let age = 25;
+
+        // if(age >= 18){
+        //     console.log("you can vote");
+        // } else{
+        //     console.log("You cannot vote");
+        // }
+
+        //odd or even
+        let num = 10;
+
+        if(num % 2 === 0) {
+            console.log(num,"is even");
+        } else{
+            console.log(num, "is odd");
+        }
+
+        //Compare three variables
+        let a = 10;
+        let b = 10;
+        let c = 10;
+        if(a==b==c){
+            console.log("Hello");
+        }else console.log("Bye Bye");//correct!
+
+        //-----else-if Statement-----
+        // let age = 70;
+
+        // if(age < 18) {
+        //     console.log("junior");
+        // } 
+        // else if(age === 18) {
+        //     console.log("Adult");
+        // }
+        // else if(age > 60) {
+        //     console.log("senior");
+        // } 
+        // else {
+        //     console.log("middle");
+        // }
+
+        //-----Ternary Operators-----
+        let age = 25;
+        let result = age >= 18 ? "adult" : "not adult";
+        console.log(result);
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes & objects in JavaScript</title>
+</head>
+<body>
+    <script>
+        //---Objects---
+        const student = {
+            fullName : "Aditya Singh",
+            marks : 94.5,
+            printMarks : function(){
+                console.log("marks=",this.marks) //student marks
+            },
+        };
+
+        const employee = {
+            calcTax() {
+                console.log("tax rate is 10%");
+            },
+        };
+
+        const aditya = {
+            salary : 50000,
+        }
+        aditya.__proto__ = employee;
+
+        //----classes----
+        //Class is a program-code template for creating objects
+        class ToyotaCar {
+            start() {
+                console.log("start");
+            }
+
+            stop() {
+                console.log("stop");
+            }
+
+            setBrand(brand) {
+                this.brand = brand;
+            }
+        }
+        //let myobj = new MyClass();
+        let fortuner = new ToyotaCar();
+        fortuner.setBrand("fortuner");
+
+        //----Constructor----
+        //constructor() is a special method
+        //automatically invoked by new
+        //initializes object
+        //let myObj = new myClass() //'new' keyward find constructor or create constructor if constructor not available in class.
+        class Info {
+            constructor(name,age,id) {
+                this.name = name;
+                this.age = age;
+                this.id = id;
+            }
+        }
+        let information = new Info("Aditya",22,201);
+      
+        //----Inheritance in JS----
+        //inheritance is passing down properties & methods from parent to child class.
+        class Parent {
+            hello() {
+                console.log("hello")
+            }
+        }
+        class Child extends Parent {}
+        let obj = new Child();
+
+        
+        //example 2
+        class Person {
+            constructor() {
+                this.species = "homo sapiens"
+            }
+            eat() {
+                console.log("eat");
+            }
+
+            sleep() {
+                console.log("sleep")
+            }
+            work() {
+                console.log("do nothing");
+            }
+        }
+        class Engineer extends Person {
+            work() {
+                console.log("solve problems, build something");// method overriding
+            }
+        }
+        let aryan = new Engineer();
+        let p1 = new Person();
+        //if Child & Parents have same method, child's method be used.[method overriding]
+
+        
+        //----super Keyword----
+        //the super keyword is used to call the constructor of its parent class to access the parent's properties and methods
+        
+        //super(args) //call Parents constructor
+        //super.parentsMethods(args)
+        class Fruits{
+            constructor() {
+                this.species = "homo sapiens";
+            }
+
+            row() {
+            console.log("row");
+        }
+
+        ripe() {
+            console.log("ripe");
+        }
+        }
+
+        class vegitables extends Fruits {
+            constructor(name){
+                super(); //to invoke parents class constructor
+                this.name = name;
+            }
+            ripe() {
+                super.ripe();// used to invoke some methods or function of parents class
+                console.log("enough ripe to eat");
+            }
+        }
+        let veg = new vegitables("potato");
+
+
+        
+        //example 2
+        class developer {
+            constructor(name) {
+                this.name = name;
+            }
+        }
+
+        class Eng extends developer {
+            constructor(name) {
+                super(name); //use to pass parents class
+            }
+
+        }
+        let dev = new Eng("Aditya");
+    </script>
+</body>
+</html>

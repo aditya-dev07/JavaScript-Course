@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set of Objects&classes</title>
+</head>
+<body>
+    <script>
+        let Data = "secret infromation";
+        class user {
+            constructor(name,email) {
+                this.name = name;
+                this.email = email;
+            }
+            viewData() {
+                console.log("viewData=",Data);
+            }
+        }
+        class admin extends user{
+            constructor(Name,Email) {
+                super(Name,Email);
+                this.Name = Name;
+                this.Email = Email;
+            }
+            editData() {
+                Data = "some new value";
+            }
+
+        }
+        let student1 = new user("Aditya","singhaditya9946@gmail.com");
+        let student2 = new user("Aryan","aryan@gmail.com");
+        let teacher = new user("teacher","teacher@gmail.com");
+
+        let admin1 = new admin("admin","admin@gmail.com")
+    </script>
+</body>
+</html>

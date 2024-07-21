@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+
+<body>
+    <script>
+        //---Strings---
+        // let str = "ApnaCollege";
+        // let str2 = 'Aditya Kumar Singh';
+        // console.log(str[0]);
+        // console.log(str2[4]);
+
+        //---Template literals---
+        // let specialString = `This is template literals ${1+2+3}`;
+        // console.log(specialString);
+
+        // let obj = {
+        //     item: "pen",
+        //     price: 10,
+        // };
+        //console.log("the cost of",obj.item, "is",obj.price, "rupees");
+        // let output = `the cost of ${obj.item} is ${obj.price} rupees`;
+        // console.log(output);
+
+        //---escape characters---
+        // console.log("Apna\ncollege");
+        // console.log("Apna \tcollege");
+        //escape characters act as single characters
+
+
+        //----Strings Methods----
+        //(1)str.toUpperCase()
+        // let str = "Apna college";
+        //  let newStr = str.toUpperCase();
+        //  console.log(str);
+        //  console.log(newStr);
+
+         //(2)str.toLOwerCase()
+        //  let str2 = "AdiTYaSinGH"
+        //  str2 = str2.toLowerCase();
+        //  console.log(str2);
+
+         //(3)str.trim()//remove spaces of before & after the strings
+         let str3 = "  Aditya Kumar Singh     "
+         str3 = str3.trim();
+         console.log(str3);
+
+         //(4)str.slice(start, end?)//return part of String
+         let str4 = "IntegralUniversity";
+         str4 = str4.slice(3, 8);//ending character not included
+         console.log(str4);
+
+         //(5)str1.concat(str2) //joins str2 with str1
+        //  let str1 = "Apna";
+        //  let str2 = "College"
+        //  let result = str1.concat(str2);
+        //  let result = str1 + str2;
+        //  console.log(result);
+
+         //(6)str.replace(searchVal, newVal)
+         let str5 = "aditya Singh";
+        //  str5 = str5.replace("a","e");
+         str5 = str5.replaceAll("a","e");
+         console.log(str5);
+
+         //(7)str.charAt(idx)
+         let str6 = "javaScript"
+         console.log(str6.charAt(4));
+
+
+ </script>
+</body>
+
+</html>

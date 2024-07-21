@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let, const & var</title>
+</head>
+
+<body>
+    <h1>let,const&var</h1>
+    <h3><u>Always use let, const & var keywords to declere variables</u></h3>
+    <p>var: Variable can be re-declared & updated. A global scope variable.</p>
+    <p>let: Variable cannot be re-declared but can be updated. A block scope variable.</p>
+    <p>const: Variable cannot be re-declared or updated. A block scope variable.</p>
+    <script>
+        let fullName = "Tony Stark";
+        console.log(fullName);
+
+        let age = 45;
+        // let price = 99.99;
+        console.log(age);
+
+        let x = null;
+        console.log(x);
+
+        const Pi = 3.14;
+        console.log(Pi);
+
+        var price = 399;
+        console.log(price);
+
+        let y = undefined;
+        console.log(y);
+
+        var isFollow = true;
+        console.log(isFollow);
+
+        let a;
+        console.log(a);
+         
+        // const a; ---This is not allowed
+        // console.log(a);
+    </script>
+</body>
+
+</html>

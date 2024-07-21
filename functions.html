@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+    <script>
+        // function myFunction() {
+        //     console.log("Welcome  to Apna College!");
+        //     console.log("We are learning JS");
+        // }
+        // myFunction();
+        //myFunction();
+        //function save us from redundancy(repeat)
+
+        //----Take input function----
+        // function myFunction(msg) {
+        //     //parameter -> input
+        //     console.log(msg);
+        // }
+        // myFunction("I love JS"); //argument
+
+        //Function -> sum of two numbers
+        // function sum(x, y) {
+        //     console.log(x + y);
+        // }
+        // sum(56,78);
+
+        //-----return Function-----
+        // function sum(x, y) {
+        //     s = x + y;
+        //     return s;
+            //console.log("Hello");//after "return" function no any code is executed
+            //function variable act like local variable of function(block scope)
+            //function variable cannot be access by outside the block
+
+        // }
+        // let val = sum(3,6);
+        // console.log(val);
+
+        //----Arrow Functions-----
+        //Compact way of writing a function
+        //sum function
+        const arrowSum = (a, b) => {
+            return a+b;
+        }
+
+        //Multiplication function
+        const arrowMul = (a, b)=> {
+            console.log(a * b);
+        };
+        arrowMul(2,4);
+
+        const printHello =() => {
+            console.log("Hello");
+        }
+
+    </script>
+</body>
+
+</html>

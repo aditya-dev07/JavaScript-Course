@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some More Array Methods</title>
+</head>
+<body>
+    <script>
+        //----Map Method----
+        //It is very similar to forEach Method
+        let nums = [45, 67, 89, 67, 70,90];
+        nums.map((val) =>{
+            console.log(val);
+        });
+
+        let arr = [45, 55, 35, 65, 75, 85];
+        let newArr = arr.map((val) => {
+            return val**2;
+        });
+        console.log(newArr);
+
+        //----Filter Method----
+        //creates a new array of elements that give true for a condition/filter.
+        //Eg: all even Elements
+        let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9,12, 14];
+        let evenarr = arr2.filter((val) => {
+            return val % 2 === 0;
+        });
+        console.log(evenarr);
+
+        //----Reduce Method----
+        //Performs some operations & reduces the array to a single value. it returns the single value.
+        let arr3 = [2,5,8,9,5];
+        const output = arr3.reduce((prev, current) => {
+            return prev + current;
+        });
+        console.log(output); //29
+
+        //find out largest numbers
+        number = [45, 67, 89, 90, 45, 23];
+        const greater = number.reduce((prev, curr) => {
+            return prev > curr ? prev : curr;
+        });
+        console.log(greater);
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatypes</title>
+</head>
+
+<body>
+    <h1>Datatypes</h1>
+    <h3>Number, String, Boolean, Undefined, Null, Bigint, Symbol and object</h3>
+    <h4>Primitive Datatypes</h4>
+    <ul>
+        <li>Number</li>
+        <li>String</li>
+        <li>Boolean</li>
+        <li>Undefinied</li>
+        <li>Null</li>
+        <li>BigInt</li>
+        <li>Symbol</li>
+    </ul>
+    <h4>Non-primitive Datatypes</h4>
+    <ul>
+        <li>Object</li>
+        <li>Array</li>
+
+    </ul>
+    <p>Object: Collection of values</p>
+    <script>
+        let age = 24;
+        let price = 100.12;
+        // console.log(price);
+        //typeof price;
+
+        let fullName = ("Tony Stark");
+        // console.log(fullName);
+        //typeof fullName;
+
+        isFollow = true;
+
+        let x;
+
+        let y = null;
+
+        let z = BigInt("123");
+
+        let s = Symbol("Hello");
+
+        // object- collect of different variables
+        const student = {
+            fullName: "Aditya Singh",
+            age: 20,
+            cgpa: 8.4,
+            isPass: true,
+        };
+
+        student["age"] = student["age"] + 1;
+        console.log(student["age"]);
+
+        student["fullName"] = "Aryan Singh"
+        console.log(student.fullName);
+    </script>
+</body>
+
+</html>
